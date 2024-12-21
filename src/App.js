@@ -27,8 +27,6 @@ function App() {
           <Route path="/kids" element={<ShopCategory banner={kids_banner} category="kid" />} />
           <Route path="/product/:productId" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
-          
-          {/* Protected Route for Login/Signup */}
           <Route 
             path="/login" 
             element={user ? <Navigate to="/" /> : <LoginSignup />} 

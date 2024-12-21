@@ -13,6 +13,11 @@
     gap: 8px;
 }
 
+.nav-logo img {
+    width: 100px;
+    height: auto;
+}
+
 .nav-logo p {
     color: #171717;
     font-size: 18px;
@@ -38,12 +43,22 @@
     cursor: pointer;
 }
 
+.nav-menu li:hover {
+    color: #FF4141;
+    transition: color 0.3s ease;
+}
+
 .nav-menu hr {
     border: none;
     width: 60%;
     height: 2px;
     border-radius: 10px;
     background: #FF4141;
+}
+
+.nav-menu li.active hr {
+    background: #FF4141;
+    height: 2px;
 }
 
 .nav-login-cart {
@@ -88,6 +103,11 @@
     .navbar {
         flex-wrap: wrap;
         padding: 10px 15px;
+    }
+
+    .nav-logo img {
+        width: 80px;
+        height: auto;
     }
 
     .nav-menu {

@@ -14,6 +14,11 @@
     gap: 10px;
 }
 
+.footer-logo img {
+    width: 200px;
+    height: auto;
+}
+
 .footer-logo p {
     color: #383838;
     font-size: 24px;
@@ -86,6 +91,11 @@
 
     .footer-logo p {
         font-size: 18px;
+    }
+
+    .footer-logo img {
+        width: 100px;
+        height: auto;
     }
 
     .footer-social-icon {

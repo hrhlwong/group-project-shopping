@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# E-commerce React Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a fully functional e-commerce website built using React. It features a shopping cart, product listings, and a checkout process.
 
 ## Available Scripts
 
