@@ -105,6 +105,30 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    .loginsignup-container {
+        padding: 25px 30px;
+    }
+
+    .loginsignup-container h1 {
+        font-size: 24px;
+    }
+
+    .loginsignup-fields input {
+        height: 52px;
+        font-size: 15px;
+    }
+
+    .loginsignup-container button {
+        height: 52px;
+        font-size: 17px;
+    }
+
+    .loginsignup-switch {
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 768px) {
     .loginsignup-container {
         padding: 20px 25px;
@@ -126,5 +150,33 @@
 
     .loginsignup-switch {
         font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .loginsignup {
+        padding: 20px 10px;
+    }
+
+    .loginsignup-container {
+        padding: 20px 15px;
+    }
+
+    .loginsignup-container h1 {
+        font-size: 20px;
+    }
+
+    .loginsignup-fields input {
+        height: 45px;
+        font-size: 13px;
+    }
+
+    .loginsignup-container button {
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .loginsignup-switch {
+        font-size: 12px;
     }
 }

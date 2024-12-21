@@ -6,32 +6,21 @@
     gap: 30px;
     padding: 20px;
     background: #f9f9f9;
-}
-
-.footer-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.footer-logo img {
-    width: 200px;
-    height: auto;
-}
-
-.footer-logo p {
-    color: #383838;
-    font-size: 24px;
-    font-weight: 700;
+    text-align: center;
 }
 
 .footer-links {
     display: flex;
+    flex-direction: column;
     list-style: none;
-    gap: 25px;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
     color: #252525;
     font-size: 14px;
     font-weight: 500;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-links li {
@@ -43,13 +32,33 @@
     color: #ff4141;
 }
 
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 80px;
+    height: auto;
+}
+
+.footer-logo p {
+    color: #383838;
+    font-size: 18px;
+    font-weight: 700;
+}
+
 .footer-social-icon {
     display: flex;
     gap: 10px;
+    justify-content: center;
 }
 
 .footer-icons-container {
-    padding: 8px;
+    padding: 6px;
     background: #fbfbfb;
     border: 1px solid #ebebeb;
     border-radius: 50%;
@@ -69,10 +78,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     width: 100%;
     color: #1a1a1a;
-    font-size: 12px;
+    font-size: 10px;
+    text-align: center;
 }
 
 .footer-copyright hr {
@@ -84,18 +94,12 @@
 }
 
 @media (max-width: 768px) {
-    .footer-links {
-        gap: 15px;
-        font-size: 12px;
-    }
-
-    .footer-logo p {
-        font-size: 18px;
-    }
-
     .footer-logo img {
         width: 100px;
-        height: auto;
+    }
+
+    .footer-links {
+        font-size: 12px;
     }
 
     .footer-social-icon {
@@ -103,10 +107,38 @@
     }
 
     .footer-icons-container {
-        padding: 6px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 15px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .footer-logo {
+        gap: 8px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-social-icon {
+        gap: 6px;
+    }
+
+    .footer-icons-container {
+        padding: 5px;
     }
 
     .footer-copyright {
-        font-size: 10px;
+        font-size: 9px;
     }
 }

@@ -5,6 +5,7 @@
   justify-content: flex-start;
   align-items: center;
   font-family: 'Poppins', sans-serif;
+  flex-wrap: wrap;
 }
 
 .search-filter input,
@@ -15,14 +16,15 @@
   border-radius: 5px;
   outline: none;
   transition: border-color 0.3s ease;
+  width: 100%;
 }
 
 .search-filter input {
-  width: 300px;
+  max-width: 300px;
 }
 
 .search-filter select {
-  width: 200px;
+  max-width: 200px;
   background-color: #f9f9f9;
   appearance: none;
   background-image: url('../Assets/dropdown_icon.png');
@@ -44,8 +46,8 @@
 
 @media (max-width: 768px) {
   .search-filter {
-    flex-wrap: wrap;
     margin: 20px;
+    justify-content: center;
   }
 
   .search-filter input,
