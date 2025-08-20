@@ -18,6 +18,46 @@ const CartItems = () => {
         }
     };
 
+    const handleCheckout = () => {
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    if (!currentUser) {
+        alert("Please log in to proceed.");
+        window.location.href = "/login";
+        return;
+    }
+    
+    const order = {
+        orderId: Date.now(),
+        date: new Date().toLocaleString(),
+        items: Object.entries(cartItems)
+        .filter(([id, qty]) => qty > 0)
+        .map(([id, qty]) => {
+            const product = all_product.find((p) => p.id === parseInt(id));
+            return {
+            id: product.id,
+            name: product.name,
+            quantity: qty,
+            price: product.new_price,
+            total: product.new_price * qty,
+            };
+        }),
+        totalAmount: getTotalCartAmount(),
+    };
+
+    const userOrdersKey = `orders_${currentUser.email}`;
+    const existingOrders = JSON.parse(localStorage.getItem(userOrdersKey)) || [];
+    const updatedOrders = [order, ...existingOrders];
+    localStorage.setItem(userOrdersKey, JSON.stringify(updatedOrders));
+
+    // Clear the cart
+    Object.keys(cartItems).forEach((id) => {
+        updateCartItemCount(id, 0);
+    });
+
+    alert("Order placed successfully!");
+
+};
+
     return (
         <div className="cartitems">
             <div className="cartitems-format-main">
@@ -79,7 +119,8 @@ const CartItems = () => {
                             <h3>${getTotalCartAmount()}</h3>
                         </div>
                     </div>
-                    <button>Proceed to Checkout</button>
+                    {/* <button>Proceed to Checkout</button> */}
+                    <button onClick={handleCheckout}>Proceed to Checkout</button>
                 </div>
             </div>
         </div>

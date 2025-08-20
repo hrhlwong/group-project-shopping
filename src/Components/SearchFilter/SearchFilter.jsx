@@ -22,12 +22,13 @@ const SearchFilter = ({ searchTerm, setSearchTerm, selectedCategory, setSelected
         value={searchTerm} 
         onChange={handleSearch} 
       />
-      <select value={selectedCategory} onChange={handleCategoryChange}>
+      {/* <select value={selectedCategory} onChange={handleCategoryChange}>
         <option value="">All Categories</option>
         <option value="men">Men</option>
         <option value="women">Women</option>
         <option value="kids">Kids</option>
-      </select>
+      </select> */}
+
       <select value={priceRange} onChange={handlePriceChange}>
         <option value="">All Price Ranges</option>
         <option value="low">Under $50</option>

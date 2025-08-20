@@ -1,0 +1,41 @@
+.orderhistory {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.orderhistory-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.orderhistory-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.orderhistory h2 {
+  margin: 5px 0;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.orderhistory-header p {
+  margin: 5px 0;
+}
+
+.orderhistory-items-header,
+.orderhistory-item-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+.orderhistory-items-header {
+  font-weight: bold;
+}

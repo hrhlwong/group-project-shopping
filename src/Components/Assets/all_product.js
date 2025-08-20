@@ -41,8 +41,8 @@ let all_product = [
     name: "Casual Striped Blouse with Peplum Hem",
     category: "women",
     image: p1_img,
-    new_price: 50.0,
-    old_price: 80.5,
+    new_price: 300.0,
+    old_price: 580.5,
     description: "A stylish striped blouse featuring flutter sleeves and a peplum hem, perfect for casual outings."
   },
   {
@@ -59,8 +59,8 @@ let all_product = [
     name: "Striped Summer Flutter Blouse",
     category: "women",
     image: p3_img,
-    new_price: 60.0,
-    old_price: 100.5,
+    new_price: 160.0,
+    old_price: 200.5,
     description: "A lightweight striped blouse with flutter sleeves, ideal for summer days."
   },
   {
@@ -68,7 +68,7 @@ let all_product = [
     name: "Sophisticated Peplum Blouse",
     category: "women",
     image: p4_img,
-    new_price: 100.0,
+    new_price: 120.0,
     old_price: 150.0,
     description: "A sophisticated blouse featuring a peplum hem and a flattering striped design."
   },
@@ -77,7 +77,7 @@ let all_product = [
     name: "Chic Overlap Collar Blouse",
     category: "women",
     image: p5_img,
-    new_price: 85.0,
+    new_price: 45.0,
     old_price: 120.5,
     description: "A chic and versatile blouse with a striped pattern and overlap collar."
   },
@@ -95,8 +95,8 @@ let all_product = [
     name: "Striped Day-Out Blouse",
     category: "women",
     image: p7_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 185.0,
+    old_price: 220.5,
     description: "A comfortable striped blouse with a peplum hem, great for day outings."
   },
   {
@@ -104,8 +104,8 @@ let all_product = [
     name: "Feminine Striped Peplum Top",
     category: "women",
     image: p8_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 35.0,
+    old_price: 80.5,
     description: "A feminine striped top featuring a peplum hem and flutter sleeves."
   },
   {
@@ -113,8 +113,8 @@ let all_product = [
     name: "Modern Striped Casual Blouse",
     category: "women",
     image: p9_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 125.0,
+    old_price: 150.5,
     description: "A modern blouse with a striped design, ideal for casual or semi-formal occasions."
   },
   {
@@ -122,8 +122,8 @@ let all_product = [
     name: "Peplum Hem Overlap Top",
     category: "women",
     image: p10_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 45.0,
+    old_price: 100.5,
     description: "An overlap collar top with a peplum hem, offering a perfect balance of style and comfort."
   },
   {
@@ -158,8 +158,8 @@ let all_product = [
     name: "Casual Green Zippered Jacket",
     category: "men",
     image: p14_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 185.0,
+    old_price: 220.5,
     description: "A casual zippered jacket in green, combining functionality and style."
   },
   {
@@ -167,7 +167,7 @@ let all_product = [
     name: "Versatile Bomber Jacket",
     category: "men",
     image: p15_img,
-    new_price: 85.0,
+    new_price: 75.0,
     old_price: 120.5,
     description: "A versatile bomber jacket with a sleek, solid green design and comfortable fit."
   },
@@ -176,8 +176,8 @@ let all_product = [
     name: "Green Zipped Slim Jacket",
     category: "men",
     image: p16_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 205.0,
+    old_price: 300.5,
     description: "A zippered slim-fit jacket, perfect for layering and keeping warm."
   },
   {
@@ -185,7 +185,7 @@ let all_product = [
     name: "Men's Urban Style Jacket",
     category: "men",
     image: p17_img,
-    new_price: 85.0,
+    new_price: 45.0,
     old_price: 120.5,
     description: "An urban-style bomber jacket in green, designed for contemporary fashion."
   },
@@ -194,8 +194,8 @@ let all_product = [
     name: "Solid Green Full-Zip Jacket",
     category: "men",
     image: p18_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 45.0,
+    old_price: 110.5,
     description: "A full-zip jacket with a solid green colour, suitable for casual wear."
   },
   {
@@ -212,8 +212,8 @@ let all_product = [
     name: "Slim-Fit Green Bomber",
     category: "men",
     image: p20_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 235.0,
+    old_price: 300.5,
     description: "A slim-fit bomber jacket in green, combining style with functionality."
   },
   {
@@ -221,7 +221,7 @@ let all_product = [
     name: "Contemporary Green Jacket",
     category: "men",
     image: p21_img,
-    new_price: 85.0,
+    new_price: 49.0,
     old_price: 120.5,
     description: "A contemporary green jacket with a full-zip design for everyday use."
   },
@@ -230,8 +230,8 @@ let all_product = [
     name: "Comfortable Men's Jacket",
     category: "men",
     image: p22_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 285.0,
+    old_price: 420.5,
     description: "A comfortable jacket in solid green, ideal for casual outings."
   },
   {
@@ -239,7 +239,7 @@ let all_product = [
     name: "Durable Zippered Jacket",
     category: "men",
     image: p23_img,
-    new_price: 85.0,
+    new_price: 95.0,
     old_price: 120.5,
     description: "A durable zippered jacket in green, offering warmth and a sleek look."
   },
@@ -248,8 +248,8 @@ let all_product = [
     name: "Men's Solid Green Jacket",
     category: "men",
     image: p24_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 585.0,
+    old_price: 720.5,
     description: "A solid green jacket with a slim fit, suitable for various occasions."
   },
   {
@@ -257,8 +257,8 @@ let all_product = [
     name: "Orange Colourblocked Sweatshirt",
     category: "kid",
     image: p25_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 125.0,
+    old_price: 180.5,
     description: "A vibrant orange sweatshirt with colourblock details, perfect for boys."
   },
   {
@@ -275,7 +275,7 @@ let all_product = [
     name: "Trendy Boys' Sweatshirt",
     category: "kid",
     image: p27_img,
-    new_price: 85.0,
+    new_price: 45.0,
     old_price: 120.5,
     description: "A trendy sweatshirt with a hood and orange colourblock design."
   },
@@ -284,8 +284,8 @@ let all_product = [
     name: "Hooded Colourblocked Sweatshirt",
     category: "kid",
     image: p28_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 285.0,
+    old_price: 220.5,
     description: "A hooded sweatshirt in orange, perfect for boys who love a sporty look."
   },
   {
@@ -293,7 +293,7 @@ let all_product = [
     name: "Bold Orange Sweatshirt",
     category: "kid",
     image: p29_img,
-    new_price: 85.0,
+    new_price: 65.0,
     old_price: 120.5,
     description: "A bold sweatshirt with a hood and a vibrant colourblock design."
   },
@@ -302,7 +302,7 @@ let all_product = [
     name: "Stylish Kids' Sweatshirt",
     category: "kid",
     image: p30_img,
-    new_price: 85.0,
+    new_price: 35.0,
     old_price: 120.5,
     description: "A stylish sweatshirt for kids, featuring a hood and colourblock patterns."
   },
@@ -311,8 +311,8 @@ let all_product = [
     name: "Playful Boys' Orange Hoodie",
     category: "kid",
     image: p31_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 135.0,
+    old_price: 180.5,
     description: "A playful orange hoodie for boys with colourblock patterns for a cheerful look."
   },
   {
@@ -320,7 +320,7 @@ let all_product = [
     name: "Vibrant Colourblocked Hoodie",
     category: "kid",
     image: p32_img,
-    new_price: 85.0,
+    new_price: 95.0,
     old_price: 120.5,
     description: "A vibrant hoodie with bold orange and contrasting colourblock patterns."
   },
@@ -338,7 +338,7 @@ let all_product = [
     name: "Sporty Kids' Orange Hoodie",
     category: "kid",
     image: p34_img,
-    new_price: 85.0,
+    new_price: 45.0,
     old_price: 120.5,
     description: "A sporty orange hoodie with colourblock patterns, perfect for active kids."
   },
@@ -347,8 +347,8 @@ let all_product = [
     name: "Dynamic Boys' Sweatshirt",
     category: "kid",
     image: p35_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 175.0,
+    old_price: 220.5,
     description: "A dynamic sweatshirt for boys with bold orange and playful design elements."
   },
   {

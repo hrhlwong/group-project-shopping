@@ -12,6 +12,9 @@ import men_banner from './Components/Assets/banner_mens.png';
 import women_banner from './Components/Assets/banner_women.png';
 import kids_banner from './Components/Assets/banner_kids.png';
 import { AuthContext } from "../src/Context/AuthContext";
+import OrderHistory from './Components/OrderHistory/OrderHistory';
+
+
 
 function App() {
   const { user } = useContext(AuthContext);
@@ -27,6 +30,7 @@ function App() {
           <Route path="/kids" element={<ShopCategory banner={kids_banner} category="kid" />} />
           <Route path="/product/:productId" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/order-history" element={<OrderHistory />} />
           <Route 
             path="/login" 
             element={user ? <Navigate to="/" /> : <LoginSignup />} 

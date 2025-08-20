@@ -13,6 +13,8 @@ const Navbar = () => {
   const { user, logout } = useContext(AuthContext);
   const navigate = useNavigate();
 
+  // const currentUser = JSON.parse(localStorage.getItem("currentUser")); // to be delete....
+
   // Handle logout functionality
   const handleLogout = () => {
     logout();
@@ -61,10 +63,16 @@ const Navbar = () => {
             </Link>
             {menu === "kids" ? <hr /> : <></>}
           </li>
+          <li onClick={() => setMenu("orders")}>
+            <Link style={{ textDecoration: "none" }} to="/order-history">
+              Orders
+            </Link>
+            {menu === "orders" ? <hr /> : <></>}
+  </li>
         </ul>
       </div>
 
-      <div className="nav-login-cart">
+      {/* <div className="nav-login-cart">
         {user ? (
           <button onClick={handleLogout}>Logout</button>
         ) : (
@@ -76,7 +84,28 @@ const Navbar = () => {
           <img src={cart_icon} alt="Cart Icon" />
         </Link>
         <div className="nav-cart-count">{getTotalCartItems()}</div>
-      </div>
+      </div> */}
+
+
+<div className="nav-login-cart">
+  {user ? (
+    <>
+      <span className="nav-user">Hello, {user.email}</span>
+      <button onClick={handleLogout}>Logout</button>
+    </>
+  ) : (
+    <Link to="/login">
+      <button>Login</button>
+    </Link>
+  )}
+  <Link to="/cart">
+    <img src={cart_icon} alt="Cart Icon" />
+  </Link>
+  <div className="nav-cart-count">{getTotalCartItems()}</div>
+</div>
+
+
+
     </div>
   );
 };
