@@ -85,6 +85,7 @@ const LoginSignup = () => {
       localStorage.setItem("currentUser", JSON.stringify(user));
       navigate("/dashboard"); // or your desired route
     } else {
+      localStorage.removeItem("currentUser"); // 🧹 clear any stale user data
       alert("Invalid credentials");
     }
   };

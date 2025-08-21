@@ -1,11 +1,16 @@
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef} from "react";
 import "./OrderHistory.css"; // Create this CSS file for styling
 
 const OrderHistory = () => {
   const [orders, setOrders] = useState([]);
   const [currentUser, setCurrentUser] = useState(null);
+  const hasRun = useRef(false); // 👈 Add this
 
   useEffect(() => {
+    if (hasRun.current) return; // 👈 Prevent second run
+    hasRun.current = true;
+    
     const user = JSON.parse(localStorage.getItem("currentUser"));
     if (!user) {
       alert("Please log in to view your order history.");
@@ -19,6 +24,9 @@ const OrderHistory = () => {
     const storedOrders = JSON.parse(localStorage.getItem(userOrdersKey)) || [];
     setOrders(storedOrders);
   }, []);
+
+  // Prevent rendering until currentUser is ready
+  if (!currentUser) return null;
 
   return (
     <div className="orderhistory">
