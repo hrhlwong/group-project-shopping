@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import Shop from './Pages/Shop';
 import ShopCategory from './Pages/ShopCategory';
 import Product from './Pages/Product';
@@ -15,16 +15,18 @@ import { AuthContext } from "../src/Context/AuthContext";
 import OrderHistory from './Components/OrderHistory/OrderHistory';
 
 
-
 function App() {
   const { user } = useContext(AuthContext);
-
+  useEffect(() => {
+    localStorage.removeItem("currentUser"); // 🧹 Clear user on page load
+  }, []);
+  
   return (
     <div>
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Shop />} />
+          <Route path="/shop" element={<Shop />} />
           <Route path="/mens" element={<ShopCategory banner={men_banner} category="men" />} />
           <Route path="/womens" element={<ShopCategory banner={women_banner} category="women" />} />
           <Route path="/kids" element={<ShopCategory banner={kids_banner} category="kid" />} />

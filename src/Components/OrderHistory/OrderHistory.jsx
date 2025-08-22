@@ -2,10 +2,12 @@
 import React, { useEffect, useState, useRef} from "react";
 import "./OrderHistory.css"; // Create this CSS file for styling
 
+
 const OrderHistory = () => {
   const [orders, setOrders] = useState([]);
   const [currentUser, setCurrentUser] = useState(null);
-  const hasRun = useRef(false); // 👈 Add this
+  const hasRun = useRef(false); 
+
 
   useEffect(() => {
     if (hasRun.current) return; // 👈 Prevent second run
@@ -15,6 +17,7 @@ const OrderHistory = () => {
     if (!user) {
       alert("Please log in to view your order history.");
       window.location.href = "/login";
+ 
       return;
     }
 
@@ -30,7 +33,11 @@ const OrderHistory = () => {
 
   return (
     <div className="orderhistory">
-      <h1>Order History</h1>
+      {/* <h1>Order History</h1> */}
+      <h1>
+        Order History <span className="orderhistory-user">({currentUser.email})</span>
+      </h1>
+
       {orders.length === 0 ? (
         <h2>No orders were found.</h2>
       ) : (

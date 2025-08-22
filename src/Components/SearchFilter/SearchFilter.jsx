@@ -6,9 +6,9 @@ const SearchFilter = ({ searchTerm, setSearchTerm, selectedCategory, setSelected
     setSearchTerm(e.target.value);
   };
 
-  const handleCategoryChange = (e) => {
-    setSelectedCategory(e.target.value);
-  };
+  // const handleCategoryChange = (e) => {
+  //   setSelectedCategory(e.target.value);
+  // };
 
   const handlePriceChange = (e) => {
     setPriceRange(e.target.value);
@@ -22,12 +22,6 @@ const SearchFilter = ({ searchTerm, setSearchTerm, selectedCategory, setSelected
         value={searchTerm} 
         onChange={handleSearch} 
       />
-      {/* <select value={selectedCategory} onChange={handleCategoryChange}>
-        <option value="">All Categories</option>
-        <option value="men">Men</option>
-        <option value="women">Women</option>
-        <option value="kids">Kids</option>
-      </select> */}
 
       <select value={priceRange} onChange={handlePriceChange}>
         <option value="">All Price Ranges</option>
