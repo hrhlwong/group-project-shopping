@@ -1,21 +1,4 @@
-// // /src/Pages/Checkout.jsx
-// import { useEffect } from "react";
-// import { useNavigate } from "react-router-dom";
-
-// const Checkout = () => {
-//   const navigate = useNavigate();
-
-//   useEffect(() => {
-//     const user = localStorage.getItem("currentUser");
-//     if (!user) {
-//       navigate("/login");
-//     }
-//   }, []);
-
-//   return <div>Welcome to Checkout!</div>;
-// };
-
-// export default Checkout;
+// /src/Pages/Checkout.jsx
 
 import React, { useEffect, useState } from "react";
 

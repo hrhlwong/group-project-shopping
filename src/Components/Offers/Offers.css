@@ -58,6 +58,7 @@
 }
 
 .offers-right img {
+    margin-top: 30px;
     width: 80%;
     height: auto;
     max-width: 500px;
